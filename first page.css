@@ -1,0 +1,97 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: purple; 
+    line-height: 1.6;
+    margin: 0;
+    padding: 0}/
+header h1 {
+    text-align: center;
+    color: white;  
+    padding: 20px 0;
+}
+
+h3 {
+    color: #f0f0f0;  
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.1em;
+    color: #e0e0e0; 
+    margin-bottom: 20px;
+}
+#services h3,
+#contact h3 {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: rgba(0, 0, 0, 0.5);  
+    padding: 8px;
+    margin-bottom: 8px;
+    color: white;
+    border-radius: 5px;
+}
+   
+
+
+
+a {
+    display: inline-block;
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #003d7a;
+}
+
+section {
+    margin: 20px;
+}
+
+
+body {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* Footer Styling */
+footer {
+    text-align: center;
+    color: black; 
+    padding: 20px 0;
+    position: relative; 
+    width: 100%;
+    font-size: 1em;
+    background-color: transparent; /* No background color to let the image show */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Units Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Absolute Units */
+    .absolute-pixels {
+      width: 300px;  /* width in pixels */
+      height: 200px; /* height in pixels */
+      background-color: lightblue;
+      margin-bottom: 20px;
+    }
+
+    .absolute-points {
+      font-size: 16pt;  /* font size in points */
+      margin-bottom: 20px;
+    }
+
+    .absolute-inches {
+      width: 2in;  /* width in inches */
+      height: 1in;  /* height in inches */
+      background-color: lightgreen;
+      margin-bottom: 20px;
+    }
+
+    /* Relative Units */
+    .relative-em {
+      font-size: 2em; /* 2 times the parent element's font size */
+      margin-bottom: 20px;
+      color: darkorange;
+    }
+
+    .relative-rem {
+      font-size: 1.5rem; /* 1.5 times the root element's font size */
+      margin-bottom: 20px;
+      color: darkgreen;
+    }
+
+    .relative-percent {
+      width: 50%;  /* 50% of the parent container's width */
+      height: 50%; /* 50% of the parent container's height */
+      background-color: lightcoral;
+      margin-bottom: 20px;
+    }
+
+    /* Viewport Units */
+    .viewport-width {
+      width: 50vw;  /* 50% of the viewport width */
+      height: 50vh; /* 50% of the viewport height */
+      background-color: lightpink;
+      margin-bottom: 20px;
+    }
+
+    .viewport-vmin {
+      width: 30vmin;  /* 30% of the smaller dimension of the viewport */
+      height: 30vmin; /* 30% of the smaller dimension of the viewport */
+      background-color: lightyellow;
+      margin-bottom: 20px;
+    }
+
+    .viewport-vmax {
+      width: 30vmax;  /* 30% of the larger dimension of the viewport */
+      height: 30vmax; /* 30% of the larger dimension of the viewport */
+      background-color: lightgray;
+      margin-bottom: 20px;
+    }
+
+    /* Ch and Ex Units */
+    .ch-unit {
+      width: 20ch; /* 20 times the width of the character "0" */
+      height: 5ex; /* 5 times the height of the letter "x" */
+      background-color: lightcyan;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="absolute-pixels">Width: 300px, Height: 200px (in px)</div>
+  <div class="absolute-points">Font size: 16pt (in pt)</div>
+  <div class="absolute-inches">Width: 2in, Height: 1in (in inches)</div>
+
+  <div class="relative-em">Font size: 2em (relative to the parent element)</div>
+  <div class="relative-rem">Font size: 1.5rem (relative to the root element)</div>
+  <div class="relative-percent">Width: 50%, Height: 50% (relative to parent)</div>
+
+  <div class="viewport-width">Width: 50vw, Height: 50vh (relative to viewport)</div>
+  <div class="viewport-vmin">Width: 30vmin, Height: 30vmin (relative to the smaller viewport dimension)</div>
+  <div class="viewport-vmax">Width: 30vmax, Height: 30vmax (relative to the larger viewport dimension)</div>
+
+  <div class="ch-unit">Width: 20ch, Height: 5ex (relative to "0" and "x" characters)</div>
+
+</body>
+</html>

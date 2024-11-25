@@ -1,0 +1,29 @@
+/* Targets all <p> (paragraph) elements */
+p {
+  color: blue;
+}
+/* Targets the element with the id "header" */
+#header {
+  background-color: lightblue;
+}
+/* Targets all elements with the class "highlight" */
+.highlight {
+  font-weight: bold;
+  color: red;
+}
+/* Targets all <span> elements inside a <div> */
+div span {
+  color: green;
+}
+/* Targets only <li> elements that are direct children of <ul> */
+ul > li {
+  list-style-type: square;
+}
+/* Targets all <input> elements with a "type" attribute */
+input[type="text"] {
+  border: 2px solid green;
+}
+/* Targets all elements with a "data-info" attribute */
+[data-info] {
+  font-style: italic;
+}

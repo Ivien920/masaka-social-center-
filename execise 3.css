@@ -1,0 +1,33 @@
+p {
+  font-family: 'Arial', sans-serif;
+}
+p {
+  font-size: 18px;  /* Set the font size to 18 pixels */
+}
+p {
+  font-weight: bold;
+}
+p {
+  letter-spacing: 2px;  /* Increase the space between letters by 2 pixels */
+}
+p {
+  text-transform: uppercase;  /* Convert all letters to uppercase */
+}
+p {
+  text-align: center;  /* Align text to the center */
+}
+p {
+  text-decoration: underline;  /* Underline the text */
+}
+p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  /* Adds a shadow effect */
+}
+
+
+part b
+p.serif {
+  font-family: 'Times New Roman', serif;
+}
+p.sans-serif {
+  font-family: 'Arial', sans-serif;
+}

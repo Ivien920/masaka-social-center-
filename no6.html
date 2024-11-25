@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding and Margin Example</title>
+    <style>
+        /* Default box-sizing behavior */
+        .box-content-box {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            margin: 10px;
+            border: 5px solid black;
+            box-sizing: content-box; /* Default behavior */
+            background-color: lightblue;
+        }
+
+        /* Box-sizing behavior where padding and border are included in the width/height */
+        .box-border-box {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            margin: 10px;
+            border: 5px solid black;
+            box-sizing: border-box; /* Changes the behavior */
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-content-box">Content Box: Padding and Border add to size</div>
+    <div class="box-border-box">Border Box: Padding and Border are included in size</div>
+</body>
+</html>

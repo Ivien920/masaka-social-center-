@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE BOOKING</title>
+    <style>
+        /* Reset margin and padding for all elements */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('IMG_4073.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Header Styling */
+        header {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 20px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Main Title */
+        h1 {
+            font-size: 3rem;
+            margin: 30px 0;
+            color: #ffcc00;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Paragraph Styling */
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            color: #e0e0e0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Booking Section Styling */
+        section#booking-form {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 12px;
+            width: 80%;
+            max-width: 500px;
+            margin-bottom: 50px;
+        }
+
+        section#booking-form h1 {
+            color: #ffcc00;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Form Elements Styling */
+        label {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            display: block;
+            color: #fff;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        select, input[type="date"], input[type="time"], input[type="text"], input[type="tel"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1rem;
+            border: 2px solid #ffcc00;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            color: #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="text"], input[type="tel"] {
+            text-transform: capitalize;
+        }
+
+        button[type="submit"] {
+            background-color: #ffcc00;
+            color: #333;
+            font-size: 1.5rem;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #e6b800;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px 0;
+            width: 100%;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer p {
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        /* Link Styling */
+        a {
+            color: #ffcc00;
+            font-size: 1.1rem;
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>BOOK A SERVICE</header>
+
+    <!-- Main Title -->
+    <h1>MASAKA SOCIAL CENTER ONLINE BOOKING</h1>
+
+    <!-- Welcome Paragraph -->
+    <p>Welcome to the Masaka Social Center online booking system.</p>
+
+    <!-- Booking Form Section -->
+    <section id="booking-form">
+        <h1>PLEASE FILL IN THE FORM BELOW</h1>
+        <form action="/submit_booking" method="post">
+            <label for="service">Select a service:</label>
+            <select id="service" name="service" required>
+                <option value="">-- Choose a service --</option>
+                <option value="community-workshop">Community Workshop</option>
+                <option value="health_wellness">Health and Wellness</option>
+                <option value="education-resources">Education Resources</option>
+            </select>
+
+            <label for="date">Select a date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Select time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Masaka Social Center. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
